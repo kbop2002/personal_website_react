@@ -9,6 +9,7 @@ interface Theme {
   primaryColor: string;
   accentColor: string;
   tertiaryColor: string;
+  textColor: string;
 }
 
 interface AppBarHeaderProps {
@@ -20,7 +21,7 @@ const AppBarHeader: React.FC<AppBarHeaderProps> = ({ theme, onMenuClick }) => {
   const navigate = useNavigate();
 
   return (
-    <AppBar position="fixed" style={{ backgroundColor: theme.accentColor }}>
+    <AppBar position="fixed" style={{ backgroundColor: theme.accentColor, color:theme.textColor }}>
       <Toolbar>
         <Typography variant="h5" style={{ flexGrow: 1 }}>
             <IconButton color="inherit" onClick={onMenuClick}>
@@ -38,9 +39,13 @@ const AppBarHeader: React.FC<AppBarHeaderProps> = ({ theme, onMenuClick }) => {
         <Button color="inherit" onClick={() => navigate('/projects')}>
           Projects
         </Button>
+        <Button color="inherit" onClick={() => navigate('/resume')}>
+          Resume
+        </Button>
         <Button color="inherit" onClick={() => navigate('/contact')}>
           Contact
         </Button>
+        
 
         <IconButton
           color="inherit"

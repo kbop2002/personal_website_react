@@ -1,11 +1,13 @@
 import React from 'react';
 import { Button, Paper, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { Padding } from '@mui/icons-material';
 
 interface Theme {
     primaryColor: string;
     accentColor: string;
     tertiaryColor: string;
+    textColor: string;
 }
 
 interface HomePageProps {
@@ -21,10 +23,13 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
       style={{
         padding: '50px',
         textAlign: 'center',
-        backgroundColor: theme.tertiaryColor,
+        backgroundColor: theme.primaryColor,
+        border:'none',
+        boxShadow:'none',
         borderRadius: '20px',
-        height: "400px",
+        height: "100vh",
         maxWidth: "60vw",
+        color:theme.textColor,
       }}
     >
       <Typography variant="h2" gutterBottom>
@@ -33,16 +38,24 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
       <Typography variant="h5" gutterBottom>
         Click below to see a few of my favorite projects.
       </Typography>
-      <img src ="/"></img>
       <Button
         variant="contained"
-        color="primary"
         size="large"
         onClick={() => navigate('/projects')}
-        style={{ marginTop: '20px', backgroundColor: theme.accentColor }}
+        style={{ marginTop: '50px', backgroundColor: theme.accentColor, color:theme.textColor, marginBottom:'400px'}}
       >
         View My Projects
       </Button>
+      <div>
+      <Typography style={{position:'relative', top:'80px'}}>
+        Built using
+      </Typography>
+        <img src ="/react.png" width={50} height={50} style={{position:'relative', top:'80px', padding:'20px'}} alt=''></img>
+        <img src ="/flask.png" width={100} height={50} style={{position:'relative', top:'80px',padding:'20px'}}alt=''></img>
+        <img src ="/MUI.svg" width={50} height={50} style={{position:'relative', top:'80px', padding:'20px'}}alt=''></img>
+      </div>
+
+
     </Paper>
   );
 };

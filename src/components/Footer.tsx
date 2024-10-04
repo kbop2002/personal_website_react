@@ -5,6 +5,7 @@ interface Theme{
     primaryColor: string;
     accentColor: string;
     tertiaryColor: string;
+    textColor: string;
 }
 
 interface FooterProps{
@@ -18,13 +19,12 @@ const Footer: React.FC<FooterProps> = ({theme}) => {
         backgroundColor: theme.accentColor,
         color: 'white',
         padding: '20px 0',
-        marginTop:"30px"
       }}
     >
       <Container maxWidth="lg">
         <Grid container justifyContent="center">
           <Grid item>
-            <Typography variant="body1">
+            <Typography variant="body1" style={{color:theme.textColor}}>
               © {new Date().getFullYear()} My Personal Website
             </Typography>
           </Grid>

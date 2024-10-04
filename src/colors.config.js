@@ -17,16 +17,16 @@ export default function chooseTheme(option){
 }
 
 const theme1 = {
-    primaryColor: "f0f0f0", 
-    accentColor: "#007bff",  
-    tertiaryColor: "#EEEEEE" ,
-    textColor: "white" 
+    primaryColor: "white", 
+    accentColor: "#F8F8F8",  
+    tertiaryColor: "#F6F6F6" ,
+    textColor: "black" 
 };
 
 const theme2 = {
-    primaryColor: "#FFFFFF", 
+    primaryColor: "#ECE2D0", 
     accentColor: "#E0E0E0",  
-    tertiaryColor: "#000000",
+    tertiaryColor: "#BFB5AF",
     textColor: "#000" 
 };
 
@@ -38,10 +38,10 @@ const theme3 = {
 }
 
 const theme4 = {
-    primaryColor : "#D1F0B1",
-    accentColor : "#B6CB9E",
-    tertiaryColor: "#92B4A7",
-    textColor: "#000" 
+    primaryColor : "#363636",
+    accentColor : "#222222",
+    tertiaryColor: "grey",
+    textColor: "white" 
 }
 
 const theme5 = {
@@ -49,5 +49,5 @@ const theme5 = {
     primaryColor : "#0B2027",
     accentColor : "#40798C",
     tertiaryColor: "#E6C79C",
-    textColor: "#000" 
+    textColor: "white" 
 }

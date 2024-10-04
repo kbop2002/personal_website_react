@@ -8,8 +8,7 @@ import ContactPage from './pages/ContactPage.tsx';
 import AppBarHeader from './components/AppBarHeader.tsx';
 import Footer from './components/Footer.tsx';
 import chooseTheme from './colors.config.js';
-import ParticleBackground from './components/particles.js';
-
+import Resume from './pages/Resume.tsx';
 const App: React.FC = () => {
   const [theme, setTheme] = useState(chooseTheme(0));
   const [open, setOpen] = useState(false);
@@ -67,9 +66,10 @@ const App: React.FC = () => {
         }
         <Routes>
           <Route path="/" element={<HomePage theme={theme} />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage theme={theme}/>} />
           <Route path="/projects" element={<ProjectsPage theme={theme} />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact" element={<ContactPage theme ={theme}/>} />
+          <Route path='/resume' element ={<Resume/>}/>
         </Routes>
       </Container>
 

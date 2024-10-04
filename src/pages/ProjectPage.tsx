@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
-import { Title } from '@mui/icons-material';
 
 interface Theme {
   primaryColor: string;
