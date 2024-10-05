@@ -29,20 +29,22 @@ const AppBarHeader: React.FC<AppBarHeaderProps> = ({ theme, onMenuClick }) => {
             </IconButton>
         </Typography>
 
-
-        <Button color="inherit" onClick={() => navigate('/')}>
+        <Button color="inherit" onClick={() => navigate('/')} style={{fontSize:'1.5vh'}}>
           Home
         </Button>
-        <Button color="inherit" onClick={() => navigate('/about')}>
+        <Button color="inherit" onClick={() => navigate('/about')}style={{fontSize:'1.5vh'}}>
           About
         </Button>
-        <Button color="inherit" onClick={() => navigate('/projects')}>
+        <Button color="inherit" onClick={() => navigate('/projects')}style={{fontSize:'1.5vh'}}
+        >
           Projects
         </Button>
-        <Button color="inherit" onClick={() => navigate('/resume')}>
+        <Button color="inherit" onClick={() => navigate('/resume')}style={{fontSize:'1.5vh'}}
+        >
           Resume
         </Button>
-        <Button color="inherit" onClick={() => navigate('/contact')}>
+        <Button color="inherit" onClick={() => navigate('/contact')}style={{fontSize:'1.5vh'}}
+        >
           Contact
         </Button>
         

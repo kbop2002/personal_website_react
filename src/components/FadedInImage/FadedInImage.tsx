@@ -33,7 +33,7 @@ const FadeInImage = ({ src, alt , height, width, top, left}) => {
       height={height}
       width={width}
       className={`fade-in-image ${isVisible ? "visible" : ""}`}
-      style={{position:'absolute', top:top, left:left}}
+      style={{position:'relative', top:top, left:left}}
     />
   );
 };

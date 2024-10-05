@@ -68,7 +68,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ theme }) => {
         borderRadius: '20px',
       }}
     >
-      <Typography variant="h3" gutterBottom>
+      <Typography variant="h3" gutterBottom style={{fontSize:'5vh'}}>
         Contact Me
       </Typography>
       <form noValidate autoComplete="off" onSubmit={handleSubmit}>
@@ -116,7 +116,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ theme }) => {
           variant="contained"
           size="large"
           type="submit"
-          style={{ backgroundColor: theme.accentColor, color: theme.textColor }}
+          style={{ backgroundColor: theme.accentColor, color: theme.textColor, marginTop:'3vh' }}
         >
           Send Message
         </Button>
