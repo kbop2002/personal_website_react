@@ -14,7 +14,7 @@ theme: Theme;
 
 const ProjectsPage: React.FC<ProjectProps> = ({theme}) => {
 
-  const isSmallScreen = window.innerWidth >= 768;
+  const isSmallScreen = window.innerWidth <= 768;
   const projects = [
     { title: 'My Personal Website', description: 'This current site, built using React.js, TypeScript, the Material-UI component library, and particle.js as well as fastApi for a very simple backend. This was primarily built to demonstrate my web design capability and creativity. The code is available to view on Github', image: '/personalWebsite.png', link:'' },
     { title: 'TransLink', description: 'A full-stack web application built using vanilla javascript, html, and css for the front end. The backend is built using FLask and AWS tooling such as lambda, API Gateway, congito for user Authentication, and dynamoDB, SNS,  and Elastic Compute Cloud.', image:"/TransLink.png", link:"https://github.com/kbop2002/Transfreight"},
