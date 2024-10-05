@@ -19,11 +19,11 @@ export default function chooseTheme(option){
 const theme1 = {
     primaryColor: "white", 
     accentColor: "#F8F8F8",  
-    tertiaryColor: "#F6F6F6" ,
+    tertiaryColor: "white" ,
     textColor: "black" 
 };
 
-const theme2 = {
+const theme4 = {
     primaryColor: "#ECE2D0", 
     accentColor: "#E0E0E0",  
     tertiaryColor: "#BFB5AF",
@@ -37,10 +37,10 @@ const theme3 = {
     textColor: "#000" 
 }
 
-const theme4 = {
-    primaryColor : "#363636",
+const theme2 = {
+    primaryColor : "#2B2B2B",
     accentColor : "#222222",
-    tertiaryColor: "grey",
+    tertiaryColor: "#434343",
     textColor: "white" 
 }
 

@@ -17,8 +17,10 @@ const Footer: React.FC<FooterProps> = ({theme}) => {
     <footer
       style={{
         backgroundColor: theme.accentColor,
-        color: 'white',
-        padding: '20px 0',
+        color: theme.textColor,
+        height:'20px',
+        padding: '20px',
+        marginTop:'20px'
       }}
     >
       <Container maxWidth="lg">

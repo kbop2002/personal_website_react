@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Paper, Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { Padding } from '@mui/icons-material';
+import FadeInImage from '../components/FadedInImage/FadedInImage.tsx';
 
 interface Theme {
     primaryColor: string;
@@ -18,8 +18,7 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
   const navigate = useNavigate();
 
   return (
-    <Paper
-      elevation={3}
+    <div
       style={{
         padding: '50px',
         textAlign: 'center',
@@ -27,7 +26,8 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
         border:'none',
         boxShadow:'none',
         borderRadius: '20px',
-        height: "100vh",
+        maxHeight:'100vh',
+        minHeight:'90vh',
         maxWidth: "60vw",
         color:theme.textColor,
       }}
@@ -36,27 +36,31 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
         Welcome to My Personal Website
       </Typography>
       <Typography variant="h5" gutterBottom>
-        Click below to see a few of my favorite projects.
-      </Typography>
+      "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. The difference between theory and practice is larger in practice than in theory." {<i>  -   Linus Torvalds</i>}    </Typography>
       <Button
         variant="contained"
         size="large"
         onClick={() => navigate('/projects')}
-        style={{ marginTop: '50px', backgroundColor: theme.accentColor, color:theme.textColor, marginBottom:'400px'}}
+        style={{ marginTop: '5vh', backgroundColor: theme.accentColor, color:theme.textColor, marginBottom:'40vh'}}
       >
         View My Projects
       </Button>
+      <FadeInImage src={'/mac.png'} alt={''} height={'60%'} width={'40%'} top={'40vh'} left={'30vw'}/>
       <div>
-      <Typography style={{position:'relative', top:'80px'}}>
+      <Typography style={{position:'absolute', top:'91%',left:'48%'}}>
         Built using
       </Typography>
-        <img src ="/react.png" width={50} height={50} style={{position:'relative', top:'80px', padding:'20px'}} alt=''></img>
-        <img src ="/flask.png" width={100} height={50} style={{position:'relative', top:'80px',padding:'20px'}}alt=''></img>
-        <img src ="/MUI.svg" width={50} height={50} style={{position:'relative', top:'80px', padding:'20px'}}alt=''></img>
+      <FadeInImage src={'/react.png'} alt={'React.js'} height={'50'} width={'50'} top={'95%'} left={'28%'}/>
+      <FadeInImage src={'/flask.png'} alt={'Flask'} height={'50'} width={'100'} top={'95%'} left={'47%'}/>
+      <FadeInImage src={'/MUI.svg'} alt={'Material-UI'} height={'50'} width={'50'} top={'95%'} left={'66%'}/>
+
+        {/*<img src ="/react.png" width={50} height={50} style={{position:'absolute', top:'92%', left:'28%',padding:'20px'}} alt='React.js'></img>
+        <img src ="/flask.png" width={100} height={50} style={{position:'absolute', top:'92%',left:'46%', padding:'20px'}}alt='Flask'></img>
+        <img src ="/MUI.svg" width={50} height={50} style={{position:'absolute', top:'92%',left:'66%', padding:'20px'}}alt='Material-UI'></img>
+        */}
       </div>
 
-
-    </Paper>
+    </div>
   );
 };
 

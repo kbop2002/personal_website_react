@@ -20,8 +20,8 @@ const ContactPage: React.FC<ContactPageProps> = ({theme}) => {
         padding: '50px',
         textAlign: 'center',
         backgroundColor: theme.tertiaryColor,
-        borderRadius: '20px',
-        margin:'50px'
+        margin:'50px',
+        color:theme.textColor
       }}
     >
       <Typography variant="h3" gutterBottom>

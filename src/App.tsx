@@ -52,7 +52,8 @@ const App: React.FC = () => {
       <Container
         maxWidth="lg"
         style={{
-          minHeight: '100vh',
+          minHeight: '95vh',
+          maxHeight:'1000vh',
           paddingTop: '10vh',
           backgroundColor: theme.primaryColor,
           maxWidth: '100vw',
