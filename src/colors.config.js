@@ -24,16 +24,16 @@ const theme1 = {
 };
 
 const theme4 = {
-    primaryColor: "#ECE2D0", 
-    accentColor: "#E0E0E0",  
-    tertiaryColor: "#BFB5AF",
-    textColor: "#000" 
+    primaryColor: "#222222", 
+    accentColor: "orange",  
+    tertiaryColor: "#453643",
+    textColor: "white" 
 };
 
 const theme3 = {
     primaryColor : "white",
     accentColor : "#C0E8F9",
-    tertiaryColor: "#4B4E6D",
+    tertiaryColor: "#BFD5E2",
     textColor: "#000" 
 }
 
@@ -48,6 +48,6 @@ const theme5 = {
 
     primaryColor : "#0B2027",
     accentColor : "#40798C",
-    tertiaryColor: "#E6C79C",
+    tertiaryColor: "#7D98A1",
     textColor: "white" 
 }
