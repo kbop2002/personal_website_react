@@ -21,7 +21,7 @@ const AppBarHeader: React.FC<AppBarHeaderProps> = ({ theme, onMenuClick }) => {
   const navigate = useNavigate();
 
   return (
-    <AppBar position="fixed" style={{ backgroundColor: theme.accentColor, color:theme.textColor }}>
+    <AppBar position="fixed" style={{ backgroundColor: theme.accentColor, color:theme.textColor, width:'100vw' }}>
       <Toolbar>
         <Typography variant="h5" style={{ flexGrow: 1 }}>
             <IconButton color="inherit" onClick={onMenuClick}>

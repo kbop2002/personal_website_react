@@ -16,6 +16,7 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ theme }) => {
   const navigate = useNavigate();
+  const isSmallScreen = window.innerWidth <= 768;
 
   return (
     <div
@@ -44,13 +45,11 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
       "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. The difference between theory and practice is larger in practice than in theory." {<i>  -   Linus Torvalds</i>}    </Typography>
       <Button
         variant="contained"
-        size="large"
         onClick={() => navigate('/projects')}
-        style={{ marginTop: '5vh', backgroundColor: theme.accentColor, color:theme.textColor, marginBottom:'40vh', zIndex:'1', width:'20vw', alignSelf:'center'}}
-      >
+        style={{ marginTop: '5vh', backgroundColor: theme.accentColor, color:theme.textColor, marginBottom:'40vh', zIndex:'1', width:'20vw', alignSelf:'center', fontSize:'2vh'}}>
         View My Projects
       </Button>
-      <FadeInImage src={'/mac.png'} alt={''} height={'400'} width={'400'} top={'-30%'} left={(window.innerWidth/2)-265}/>
+      <FadeInImage src={'/mac.png'} alt={''} height={'400'} width={'400'} top={'-30%'} left= {isSmallScreen? (window.innerWidth/2):(window.innerWidth/2)-265}/>
       <div>
       <Typography style={{position:'relative', top:'-6vh',left:'0%', marginBottom:'1vw'}}>
         Built using
