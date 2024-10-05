@@ -55,6 +55,8 @@ const App: React.FC = () => {
           minHeight: '95vh',
           maxHeight:'1000vh',
           paddingTop: '10vh',
+
+          paddingBottom:'30px',
           backgroundColor: theme.primaryColor,
           maxWidth: '100vw',
           display: 'flex',

@@ -26,8 +26,8 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
         border:'none',
         boxShadow:'none',
         borderRadius: '20px',
-        maxHeight:'100vh',
-        minHeight:'90vh',
+        maxHeight:'110vh',
+        minHeight:'100vh',
         maxWidth: "60vw",
         color:theme.textColor,
       }}
