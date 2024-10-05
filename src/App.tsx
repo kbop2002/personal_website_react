@@ -26,7 +26,7 @@ const App: React.FC = () => {
       onKeyDown={() => toggleDrawer(false)}
     >
       <List>
-        {['Theme 1', 'Theme 2', 'Theme 3', 'Theme 4',"Theme 5"].map((text, index) => (
+        {['Light Mode   (default)', 'Dark Mode', 'Summer Sky', 'Halloween',"Seaweed"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton onClick={() => setTheme(chooseTheme(index + 1))}>
               <ListItemText primary={text} />

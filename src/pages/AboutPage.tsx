@@ -15,6 +15,12 @@ interface AboutPageProps{
 const AboutPage: React.FC<AboutPageProps> = ({theme}) => {
   return (
     <>
+    <FadeInImage src={'/IMG_0549.jpg'} alt={'Selfie'} height={'300px'} width={'300px'} top={'30vh'} left={'75vw'}/>
+    <FadeInImage src={'/IMG_0214.HEIC'} alt={''} height={'220px'} width={'320px'} top={'45vh'} left={'1vw'}/>
+
+
+  
+
     <FadeInImage src={'/flask.png'} alt={''} height={'70px'} width={'175'} top={'100vh'} left={'1vw'}/>
     <FadeInImage src={'/react.png'} alt={''} height={'100px'} width={'100px'} top={'120vh'} left={'11vw'}/>
     <FadeInImage src={'/MUI.svg'} alt={''} height={'100px'} width={'100px'} top={'140vh'} left={'1vw'}/>
