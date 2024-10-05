@@ -1,0 +1,5 @@
+Use Css media quieries to adjust:
+ - max size width on home page for mobile browsers
+ - centering of laptop home page for mobile browsers
+ - max width on about page for mobile browsers
+ - card height on project page for mobile browsers

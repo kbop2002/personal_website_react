@@ -26,9 +26,9 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
         border:'none',
         boxShadow:'none',
         borderRadius: '20px',
-        maxHeight:'145vh',
+        maxHeight:'165vh',
         minHeight:'100vh',
-        maxWidth: "100vw",
+        maxWidth: "150vw",
         color:theme.textColor,
         display:'flex',
         flexDirection:'column'
@@ -50,14 +50,14 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
       >
         View My Projects
       </Button>
-      <FadeInImage src={'/mac.png'} alt={''} height={'400'} width={'400'} top={'-30%'} left={(window.innerWidth/2)-275}/>
+      <FadeInImage src={'/mac.png'} alt={''} height={'400'} width={'400'} top={'-30%'} left={(window.innerWidth/2)-265}/>
       <div>
       <Typography style={{position:'relative', top:'-6vh',left:'0%', marginBottom:'1vw'}}>
         Built using
       </Typography>
-      <FadeInImage src={'/react.png'} alt={'React.js'} height={'50'} width={'50'} top={'-5vh'} left={'0%'}/>
-      <FadeInImage src={'/flask.png'} alt={'Flask'} height={'50'} width={'100'} top={'-5vh'} left={'0%'}/>
-      <FadeInImage src={'/MUI.svg'} alt={'Material-UI'} height={'50'} width={'50'} top={'-5vh'} left={'0%'}/>
+      <FadeInImage src={'/react.png'} alt={'React.js'} height={'50'} width={'50'} top={'10px'} left={'0%'}/>
+      <FadeInImage src={'/flask.png'} alt={'Flask'} height={'50'} width={'100'} top={'10px'} left={'0%'}/>
+      <FadeInImage src={'/MUI.svg'} alt={'Material-UI'} height={'50'} width={'50'} top={'10px'} left={'0%'}/>
 
         {/*<img src ="/react.png" width={50} height={50} style={{position:'absolute', top:'92%', left:'28%',padding:'20px'}} alt='React.js'></img>
         <img src ="/flask.png" width={100} height={50} style={{position:'absolute', top:'92%',left:'46%', padding:'20px'}}alt='Flask'></img>

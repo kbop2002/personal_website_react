@@ -58,7 +58,7 @@ const App: React.FC = () => {
 
           paddingBottom:'30px',
           backgroundColor: theme.primaryColor,
-          maxWidth: '100vw',
+          maxWidth: '150vw',
           display: 'flex',
           justifyContent: 'center',
           position: 'relative',
