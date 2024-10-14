@@ -43,10 +43,10 @@ const AppBarHeader: React.FC<AppBarHeaderProps> = ({ theme, onMenuClick }) => {
         >
           Resume
         </Button>
-        <Button color="inherit" onClick={() => navigate('/contact')}style={{fontSize:'1.5vh'}}
+        {/*<Button color="inherit" onClick={() => navigate('/contact')}style={{fontSize:'1.5vh'}}
         >
           Contact
-        </Button>
+        </Button>*/}
         
 
         <IconButton
