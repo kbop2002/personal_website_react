@@ -49,7 +49,7 @@ const HomePage: React.FC<HomePageProps> = ({ theme }) => {
         style={{ marginTop: '5vh', backgroundColor: theme.accentColor, color:theme.textColor, marginBottom:'40vh', zIndex:'1', width:'20vw', alignSelf:'center', fontSize:'1.5vh'}}>
         View My Projects
       </Button>
-      <FadeInImage src={'/mac.png'} alt={''} height={'400'} width={'400'} top={'-30%'} left= {isSmallScreen? (window.innerWidth/2)-200:(window.innerWidth/2)-265}/>
+      <FadeInImage src={'/mac.png'} alt={''} height={'400'} width={'400'} top={'-30%'} left= {isSmallScreen? (window.innerWidth/2)-210:(window.innerWidth/2)-280}/>
       <div>
       <Typography style={{position:'relative', top:'-6vh',left:'0%', marginBottom:'1vw'}}>
         Built using
