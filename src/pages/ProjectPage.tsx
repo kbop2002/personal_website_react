@@ -13,6 +13,7 @@ theme: Theme;
 }
 
 const ProjectsPage: React.FC<ProjectProps> = ({theme}) => {
+  
 
   const isSmallScreen = window.innerWidth <= 768;
   const projects = [
@@ -21,13 +22,12 @@ const ProjectsPage: React.FC<ProjectProps> = ({theme}) => {
     { title: 'Linkify Fulfilment Automation', description: 'A dropshipping automation tool built to integrate with the Ebay and AliExpress APIs. The frontend was built using react with typesceipt, and material-ui. The User authentication is handled using the Ebay Oath and AWS COngnito, and the backend is Built using the AWS tooling and Flask.', image: '/sl.png',link:'https://github.com/kbop2002/Linkify-Automation-Tool' },
     { title: 'WeatherWise', description:'A full-stack application built using React.js, FastApi, and Zustand for state management. This was one of the first colaborative projects I worked on and get first hand experience working with git. I assisted in both front and back-end developement',image:'/wwe.png', link:'https://github.com/srest2021/weatherwise'},
     { title: 'PieCart', description:'A full stack application designed and built collaborativly with a team for a software engineering class. The backend was fully designed and deployed within AWS utilizing tooling such as Lambda, API Gateway, and Cognito for User Authentication and session management.',image:'/pc.png', link:'https://github.com/kbop2002/mywebsite'},
-    { title: 'Housing Data Linear Regression Model', description:'A project created for my data Science class that looked at thousands of houses with 14 variables, and utilizing R, determined their relationship to the homes to creacte a predictive model. Was one of my first introduction to machine learning algorithms.',image:'/under.jpg', link:'https://github.com/kbop2002/HousingData'},
-    { title: 'Nimbus', description:'A cloud native full stack application designed to assist in the creation of infrastructure as code using generative AI. This application utilizes React with typescript, the Material UI component Library, and AWS API Gateway, DynamoDB, and Lambda as well as Azures ML deployment tooling. ',image:'/nimbus.png', link:''},
-    { title: 'Under Construction', description:'Under Construction',image:'/under.jpg', link:''},
-    { title: 'Under Construction', description:'Under Construction',image:'/under.jpg', link:''},
-
-
+    { title: 'Housing Data Linear Regression Model', description:'A project created for my Data1501 class that looked at variables accross several thousand homes to create a simple linear regression model to predict housing prices. This was my introduction to machine learning algorithms and statistics based languages.',image:'/under.jpg', link:'https://github.com/kbop2002/HousingData'}
   ];
+
+  /*{ title: 'Nimbus', description:'A cloud native full stack application designed to assist in the creation of infrastructure as code using generative AI. This application utilizes React with typescript, the Material UI component Library, and AWS API Gateway, DynamoDB, and Lambda as well as Azures ML deployment tooling. ',image:'/nimbus.png', link:''},
+    { title: 'Under Construction', description:'Under Construction',image:'/under.jpg', link:''},
+    { title: 'Under Construction', description:'Under Construction',image:'/under.jpg', link:''},*/
 
   return (
     <Grid container spacing={4}>
